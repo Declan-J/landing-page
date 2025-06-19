@@ -1,0 +1,56 @@
+body {
+  display: flex;
+  flex-flow: column wrap;
+  margin: 0;
+  padding: 0;
+  font-family: Roboto, Arial, sans-serif;
+}
+
+body > * {
+  padding: 0 15%;
+}
+
+h1,
+h2 {
+  margin: 0;
+}
+
+header,
+.hero {
+  background-color: #1f2937;
+  color: #f9faf8;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 16px;
+}
+
+.logo {
+  font-size: 30px;
+}
+
+.header-links {
+  display: flex;
+  font-size: 18px;
+  color: #e5e7eb;
+  margin-left: auto;
+  gap: 20px;
+}
+
+.hero {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.quote {
+  background-color: #e5e7eb;
+  font-style: italic;
+  color: #1f2937;
+  font-size: 36px;
+}
+
+.quote .author  {
+    font-size: 28px;
+}

@@ -11,8 +11,19 @@ body > * {
 }
 
 h1,
-h2 {
+h2,
+p {
   margin: 0;
+}
+
+button {
+  align-self: flex-start;
+  color: white;
+  background-color: #3882f6;
+  border: 0 solid black;
+  border-radius: 6px;
+  padding: 8px 16px;
+  margin-top: 16px;
 }
 
 header,
@@ -40,8 +51,25 @@ header {
 }
 
 .hero {
+  display: flex;
+  justify-content: space-between;
+  gap: 80px;
   padding-top: 50px;
   padding-bottom: 50px;
+}
+
+.hero-text-container {
+  display: flex;
+  flex-flow: column wrap;
+}
+
+.hero-image-container {
+  flex: auto;
+}
+
+.hero-image-container > img {
+  height: auto;
+  width: 500px;
 }
 
 .quote {
@@ -51,6 +79,6 @@ header {
   font-size: 36px;
 }
 
-.quote .author  {
-    font-size: 28px;
+.quote .author {
+  font-size: 28px;
 }

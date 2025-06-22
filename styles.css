@@ -1,19 +1,25 @@
+/* ELEMENT SELECTORS */
 body {
   display: flex;
   flex-flow: column wrap;
+  justify-content: center;
   margin: 0;
   padding: 0;
   font-family: Roboto, Arial, sans-serif;
-}
-
-body > * {
-  padding: 0 15%;
+  box-sizing: border-box;
 }
 
 h1,
 h2,
 p {
   margin: 0;
+}
+
+h2 {
+  font-size: 36px;
+  color: #1f2937;
+  font-weight: 900px;
+  padding-bottom: 30px;
 }
 
 button {
@@ -25,6 +31,8 @@ button {
   padding: 8px 16px;
   margin-top: 16px;
 }
+
+/* HEADER */
 
 header,
 .hero {
@@ -50,10 +58,12 @@ header {
   gap: 20px;
 }
 
+/* HERO */
+
 .hero {
   display: flex;
-  justify-content: space-between;
-  gap: 80px;
+  justify-content: center;
+  gap: 30px;
   padding-top: 50px;
   padding-bottom: 50px;
 }
@@ -64,13 +74,36 @@ header {
 }
 
 .hero-image-container {
-  flex: auto;
+  display: flex;
 }
 
 .hero-image-container > img {
+  display: flex;
+  flex: 1 1 auto;
+  flex-flow: row nowrap;
+  align-items: center;
   height: auto;
   width: 500px;
 }
+
+/* INFORMATION */
+
+.info {
+  text-align: center;
+  padding: 30px 0 60px;
+}
+
+.info-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.info-card {
+  display: flex;
+  flex-direction: column;
+}
+
+ /* QUOTE */
 
 .quote {
   background-color: #e5e7eb;
@@ -82,3 +115,10 @@ header {
 .quote .author {
   font-size: 28px;
 }
+
+/* GLOBAL PADDING */
+
+header, .hero, .info, .quote, .CTA, footer {
+  padding-left: 120px;
+  padding-right: 120px;
+} 

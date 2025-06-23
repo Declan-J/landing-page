@@ -90,7 +90,7 @@ header {
 
 .info {
   text-align: center;
-  padding: 30px 0 60px;
+  padding: 30px 0 50px;
 }
 
 .info-container {
@@ -122,14 +122,61 @@ header {
  /* QUOTE */
 
 .quote {
+  display: flex;
+  flex-direction: column;
   background-color: #e5e7eb;
   font-style: italic;
   color: #1f2937;
   font-size: 36px;
+  padding: 100px 0 100px 0;
 }
 
-.quote .author {
+.author {
   font-size: 28px;
+  align-self: flex-end;
+}
+
+/* CALL TO ACTION / CTA  */
+
+.CTA {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 0 100px 0;
+}
+
+.CTA-container {
+  display: flex;
+  flex: 1 1 auto;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: #3882f6;
+  border-radius: 10px;
+  padding: 40px 0 40px 0;
+}
+
+.CTA-text {
+  flex: auto;
+  margin-left: 40px;
+  color: white;
+}
+
+.CTA-container button {
+  flex: 0 1 auto;
+  border: 2px solid white;
+  margin-right: 40px;
+  margin-top: 0;
+}
+
+/* FOOTER */
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1f2937;
+  color: #f9faf8;
+  padding: 40px 0 40px 0;
 }
 
 /* GLOBAL PADDING */

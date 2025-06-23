@@ -161,9 +161,14 @@ header {
   color: white;
 }
 
-.CTA-container button {
+.CTA-text strong {
+  font-size: x-large;
+}
+
+.CTA-button button {
   flex: 0 1 auto;
   border: 2px solid white;
+  margin-left: 20px;
   margin-right: 40px;
   margin-top: 0;
 }

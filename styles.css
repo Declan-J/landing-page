@@ -96,11 +96,27 @@ header {
 .info-container {
   display: flex;
   justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
 }
 
 .info-card {
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.info-card img {
+  margin-bottom: 6px;
+  border: 5px solid skyblue;
+  border-radius: 10px;
+  height: 150px;
+  width: auto;
+}
+
+.info-card p {
+  color: #595959;
 }
 
  /* QUOTE */
